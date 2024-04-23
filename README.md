@@ -1,7 +1,10 @@
 # WireX - Python 3 Compatibility Update
 
 ## Introduction
-WireX is a software library originally developed by Andreas Pott for the analysis and synthesis of cable-driven parallel robots. This README outlines the changes made to update the original WireX project for compatibility with Python 3.
+WireX is a software library originally developed by Andreas Pott for the analysis and synthesis of cable-driven parallel robots. This README outlines the changes made to update the original WireX project for compatibility with Python 3. 
+
+## Purpose
+Why not just use older python? - What's the fun in that, I needed a copy of the repo for work on my capstone project and thought why not try and see if I can change the whole thing to work with a newer/different versions of python, turns out it was quite easy! and also it was interesting exploring how the project was constructed as I planned to develop my own specific software to run my capstone.
 
 ## Changes
 The project has been updated to support Python 3, reflecting the discontinuation of support for Python 2. Below is a summary of the key changes:
