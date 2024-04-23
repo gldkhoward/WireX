@@ -24,7 +24,7 @@ To install and use the updated WireX library, follow these steps:
 1. Ensure you have Python 3.6 or higher installed.
 2. Clone the repository:
    ```bash
-   git clone https://your-repository-url-here
+   git clone https://github.com/gldkhoward/WireX.git
    ```
 3. Build the project (adjust commands as necessary):
    ```bash
@@ -52,5 +52,5 @@ where lines without the > are the expected response
 
 ### Further Details
 The details above cover the very simple changes made to the existing project, for further information refer to the readMe within the project or the following:
-[WireX Repo]([https://gitlab.cc-asp.fraunhofer.de/wek/wirex] "Original WireX Repo")
-[WireX Presentation] ([https://www.researchgate.net/publication/334164626_WireX_-_An_Open_Source_Initiative_Scientific_Software_for_Analysis_and_Design_of_Cable-driven_Parallel_Robots] "Some additional information on the WireX software")
+[WireX Repo](https://gitlab.cc-asp.fraunhofer.de/wek/wirex "Original WireX Repo")
+[WireX Presentation] (https://www.researchgate.net/publication/334164626_WireX_-_An_Open_Source_Initiative_Scientific_Software_for_Analysis_and_Design_of_Cable-driven_Parallel_Robots "Some additional information on the WireX software")
