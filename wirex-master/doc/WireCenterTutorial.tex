@@ -1,0 +1,343 @@
+\chapter{WireCenter-Tutorial}
+
+This tutorial is a semi-automatic conversion of a PowerPoint presentation with exercises and sample problems for learning WireCenter. It was originally generated in Winter 2016 and the translation was executed in September 2017.
+
+\section{Getting Started}
+\subsection{Before you begin}
+
+\begin{itemize}
+\item  {Remarks on this tutorial: The tasks and Exercises given
+  below shall provide a guided tour through the main features of
+  WireCenter. Often there is not one unique way to achieve a result. The
+  tutorial only poses the tasks perhaps with hints on how to solve the
+  tasks.}
+\item  {WireCenter was carefully developed; however, scientific
+  software is not consumer software. Some functions where developed for
+  a special purpose, that may not be generalized and thus not applicable
+  for other
+  user.}
+\item  {Please report all errors and programs crashes. Please
+  also report incomplete English Translation.}
+\begin{itemize}
+\item  {Try to reproduce the
+  error}
+\item  {Write down what you were doing (which function was
+  called)}
+\end{itemize}
+\end{itemize}
+
+\subsection{Introduction and Beginning}
+
+\begin{itemize}
+\item  {Start WireCenter, inspect the GUI}
+\item  {Rotate, pan and zoom the 3D window}
+\item  {Arrange the pane windows.}
+\begin{itemize}
+\item  {Dock the panes to the main window border}
+\item  {Stack the pane windows over each other}
+\end{itemize}
+\item  {Change amongst the three main views (3d-view, Geometry, Report)}
+\end{itemize}
+
+\section{Basic Robot Manipulation}
+\subsection{System Menu and basic robot}
+
+\begin{itemize}
+\item  {Create a new robot of the IPAnema1 design}
+\item  {Manually edit the geometry (in the Geometry view)}
+\item  {Use the transform feature to scale, translate, and rotate the robot frame and platform. (geometry view)}
+\item  {Use model transformation during robot creation to change the robot geometry in the new robot dialog}
+\item  {Use the design ribbon to apply parametric models and
+  parameter changes to the
+  robot}
+\item  {Use design transformations to translate, scale, and
+  robot the whole robot design through the ribbon
+  bar}
+\item  {Use the interactive mode to drag the winches}
+\item  {Export a robot to wcrfx format and save it to disk;
+  inspect the resulting xml file with a text
+  editor}
+\end{itemize}
+
+\begin{itemize}
+\item  {Load a robot from an wcrfx file}
+\item  {Repeat the steps above for a planar robot with four
+  cables and 1R2T motion
+  pattern}
+\item  {Repeat the steps above for another robot design (e.g.
+  CoGiRo or
+  Falcon)}
+\end{itemize}
+
+\section{Kinematic evaluation}
+\subsection{Pose Inspector Pane}
+
+\begin{itemize}
+\item  {Set the platform position and orientation through the
+  pane window ``pose inspector''}
+\item
+  {Use the interactive model to move and rotate the mobile
+  platform}
+\item  {Configure Pose Evaluation through the options dialog;
+  add the InverseKinematics\_Standard evaluator. Observe the fields in
+  the Pose Inspector
+  pane}
+\item  {Compute the cable length for different
+  positions}
+\item  {Add a suitable pose evaluator and compute possible
+  cable force distributions for different
+  positions}
+\item  {Analyze how cable force distributions change when
+  scaling or rotating the robot
+  design}
+\item  {Compare the results from pulley and standard model for
+  inverse
+  kinematics}
+\end{itemize}
+
+\begin{itemize}
+\item  {Enable force visualization in the 3D-view
+  settings}
+\item  {Add an additional pose mapper to pose evaluation and
+  change the parameterization to
+  Euler-angles}
+\item  {Rotate the platform and check the output on the pose
+  inspector}
+\end{itemize}
+
+\section{Pose Lists}
+\subsection{Pose Tab}
+
+\begin{itemize}
+\item  {Generate a pose list from an NC program and execute the
+  program
+  interactively}
+\item  {Change the interpolation setting of the NC-interpolator
+  and reload the
+  program}
+\item  {Write a NC program to move along a rectangle in the xy,
+  xz, and yz
+  plane}
+\item  {Write the NC program to generate the motion described
+  in the CK2013
+  paper.}
+\item  {Configure inverse kinematics for pose
+  evaluation}
+\item  {Use the export function to generate a csv
+  file}
+\item  {Import the data in Excel and generate plots (cable
+  length over time; cable force over
+  time)}
+\item  {Create orientation trajectories using a NC
+  program}
+\end{itemize}
+
+\begin{itemize}
+\item  {Analyze change in cable force depending on
+  orientation}
+\item  {Use the pose options to compare different force
+  distribution
+  methods}
+\item  {Compare pulley model with standard model along a
+  trajectory}
+\item  {Save the motion of the platform to a
+  trajectory}
+\end{itemize}
+
+\subsection{Pose Evaluation}
+
+\begin{itemize}
+\item  {Generate a regular rectangular grid and execute pose
+  evaluation}
+\item  {Export the data to a csv file and open the results in
+  Excel (use the ``analyze trajectory'' button on the
+  ribbon)}
+\item  {Compute a contour plot or a 3D-plot in Excel showing
+  the
+  distribution}
+\item  {How many poses belong to the wrench-feasible
+  workspace?}
+\item  {How many poses are reachable under strict cable length
+  restriction?}
+\item  {Generate a random grid of poses and export the results
+  to a csv
+  file}
+\item  {Use matlab (or similar programs) to generate a
+  histogram of the cable length (do the same for the cable
+  forces)}
+\end{itemize}
+
+\section{Workspace computation}
+
+\begin{itemize}
+\item  {Compute the wrench-feasible translational workspace
+  using the closed-form method and the hull
+  representation}
+\item  {Compute the volume and surface of the wrench-feasible
+  workspace; change the geometry of the robot with the parametric models
+  and compare the results for workspace
+  computation}
+\item  {Analyze the influence of the applied wrench on the
+  workspace. Apply forces in different directions; apply torques around
+  different axis.
+  }
+\item  {Refine the workspace computation by increasing the
+  number of recursive
+  sub-division}
+\item  {Check the computation
+  time.}
+\item  {Compare wrench-feasible workspace computation results
+  for different force distribution methods (closed form, dykstra,
+  advanced closed form,
+  wrench-set)}
+\item  {Change the orientation of the platform and compute the
+  workspace}
+\end{itemize}
+
+\begin{itemize}
+\item  {Export the workspace to a STL file and save it to
+  disk}
+\item  {Configure a orientation spectrum for the robot and
+  compute the total orientation workspace as well as the maximum
+  workspace}
+\item  {Compute a cross section of the workspace in xy, xz, and
+  yz
+  plane}
+\item  {Save the cross section to disk as svg
+  file}
+\item  {Compute the workspace for a regular rectangular and
+  regular cylindrical
+  grid}
+\item  {Use a random grid for workspace
+  computation}
+\item  {Set the region of interest and use it for grid
+  workspace}
+\item  {Change the resolution for the grid workspace
+  computation}
+\item  {Check grid coverage for a region of
+  interest}
+\end{itemize}
+
+\section{Cable interference}
+
+\begin{itemize}
+\item  {Use the cable-cable interference computation to
+  determine the regions of interference for the constant orientation
+  workspace}
+\item  {Compute the interference region for different
+  orientation of the
+  platform}
+\end{itemize}
+
+\section{Visualization}
+
+\begin{itemize}
+\item  {Change the program setting for creating
+  figures:}
+\item  {Change between orthographic and perspective
+  projection}
+\item  {Set the background color to black or
+  white}
+\item  {Visualize the ground
+  plane}
+\item  {Load a CAD file into the scene (python
+  command)}
+\item  {Receive the platform handle, active the platform frame
+  and load a CAD file to be attached to the traveling
+  platform}
+\item  {Delete all custom shapes (either through the ribbon or
+  through
+  python)}
+\end{itemize}
+
+\section{Python Scripting}
+\subsection{Interactive}
+
+\begin{itemize}
+\item  {Execute a simple python command to compute the sum of
+  two
+  numbers}
+\item  {Use the interface Iapp and Iscene to manipulate the
+  WireCenter
+  GUI}
+\item  {Step through the four folder of the console window
+  (console, python, actions,
+  history)}
+\item  {Select a command from the python tab and double click
+  it. Configure its parameterization (if
+  any)}
+\item  {Select and execute a recent command from the history
+  tab}
+\item  {Select the edit tab and use the up/down key to execute
+  recent
+  commands}
+\end{itemize}
+
+
+
+\subsection{Python Scripting Script}
+
+\begin{itemize}
+\item  {Start workspace computation through a python
+  script}
+\item  {Change the robot geometry through a python
+  script}
+\item  {Perform a parameter sweep and keep track of the volume
+  of the workspace.
+  }
+\item  {Print the pairs geometry and workspace properties on
+  the
+  screen}
+\item  {Create a 2D plot from the results (e.g. using
+  Excel)}
+\end{itemize}
+
+\subsection{Advanced data handling with scripts}
+
+\begin{itemize}
+\item  {Store the recently computed wrench-feasible workspace
+  in the results
+  window}
+\item  {Convert the hull to a pose
+  list}
+\item  {Execute the pose list in the
+  NC-interpolator}
+\item  {Analyze the cable length for the poses on the
+  hull}
+\item  {Repeat the procedure for cross section
+  objects}
+\item  {Compare the hull for different settings of the
+  workspace
+  algorithm}
+\item  {Compute and visualize the workspace for different force
+  limits}
+\end{itemize}
+
+\begin{itemize}
+\item  {Install and start a python
+  development environment}
+\item  {Use the scientific python package numpy, scipy, and
+  matplotlib to load and display csv files created in
+  WireCenter}
+\end{itemize}
+
+\subsection{Advanced Customization with Action
+Scripts}
+
+\begin{itemize}
+\item  {Open WireCenter.py in a python-capable text
+  editor}
+\item  {Edit the print-commands in the
+  default-action}
+\item  {Execute the action through the WireCenter GUI (action
+  on the ribbon
+  bar)}
+\item  {Add a custom action to the system
+  script}
+\item  {Check the item in the action button, inspect the system
+  script using the Console action
+  tab}
+\end{itemize}
+
+
+

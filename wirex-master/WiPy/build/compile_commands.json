@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/luke/git/WireX/wirex-master/WiPy/build",
+  "command": "/usr/bin/g++ -DWiPy_EXPORTS -I/usr/include/python3.10 -g -fPIC   -w -o CMakeFiles/WiPy.dir/pyBindings.cpp.o -c /home/luke/git/WireX/wirex-master/WiPy/pyBindings.cpp",
+  "file": "/home/luke/git/WireX/wirex-master/WiPy/pyBindings.cpp"
+},
+{
+  "directory": "/home/luke/git/WireX/wirex-master/WiPy/build",
+  "command": "/usr/bin/g++ -DWiPy_EXPORTS -I/usr/include/python3.10 -g -fPIC   -w -o CMakeFiles/WiPy.dir/WiPy.cpp.o -c /home/luke/git/WireX/wirex-master/WiPy/WiPy.cpp",
+  "file": "/home/luke/git/WireX/wirex-master/WiPy/WiPy.cpp"
+}
+]

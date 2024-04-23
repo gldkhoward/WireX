@@ -1,0 +1,45 @@
+// Parameter of Wire Robot
+
+// General Parameters
+// dof - degree-of-freedom
+dof 6
+
+// now - number of wires
+now 8
+
+// lmin - minimal length of wires
+lmin 0
+
+// lmax - maximal length of wires
+lmax 0
+
+// fmin - minimal force in wires
+fmin 1
+
+// fmax - maximal force in wires
+fmax 10
+
+
+// Geometry information
+// base|platform INDEX X Y Z
+
+base 1 -2  1.5 2
+base 2  2  1.5 2
+base 3  2 -1.5 2
+base 4 -2 -1.5 2
+base 5 -2  1.5 0
+base 6  2  1.5 0
+base 7  2 -1.5 0
+base 8 -2 -1.5 0
+// base 9 0 0 3
+
+platform 1 -0.06  0.06 0
+platform 2  0.06  0.06 0
+platform 3  0.06 -0.06 0
+platform 4 -0.06 -0.06 0
+platform 5 -0.06  0.06 0
+platform 6  0.06  0.06 0
+platform 7  0.06 -0.06 0
+platform 8 -0.06 -0.06 0
+// platform 9 0 0 0
+// End of File

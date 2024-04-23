@@ -1,0 +1,86 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+#Beware python libs:
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+#Beware python libs:
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.pyc
+
+#VS-Studio
+*.user
+*.sdf
+*.opensdf
+*.suo
+*.aps
+*.zip
+
+# VS2015 temp files
+*.db
+*.opendb
+
+#cmake files
+*.cmake
+
+#Directories
+Debug/
+Release/
+VisualCPP/
+ipch/
+bin/
+.vscode/
+levmar/
+cvxgen/
+builds/
+
+# ignore temp files
+*.bak
+
+#misc
+cmdhist.txt
+Makefile
+CMakeFiles/
+CMakeCache.txt
+
+#Tex-files
+*.aux
+*.log
+*.pdf
+*.gz
+*.toc
+*.png
+*.dvi
+*.tag
+
+# ignore user generated figures
+PythonScripts/*.eps
+
+# ignore auto generated sub-directories
+doc/html/
+doc/latex/
+

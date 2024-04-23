@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>WireCenter</ProjectName>
+    <ProjectGuid>{5068BB52-8BA4-4EBA-A607-E7F1018E16B0}</ProjectGuid>
+    <RootNamespace>WireCenter</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)D</TargetName>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">$(SolutionDir)bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;IPAGLMDd.lib;WireLibMDd.lib;tinyXMLMDd.lib;python27.lib;vfw32.lib;motionPlanningMDd.lib;WireLibPyBindingsMDd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)../lib;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <ForceSymbolReferences>__matherr;%(ForceSymbolReferences)</ForceSymbolReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0407</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;IPAGLMD.lib;WireLibMD.lib;tinyXMLMD.lib;Python27.lib;vfw32.lib;motionPlanningMD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)../lib/;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <ForceSymbolReferences>__matherr;%(ForceSymbolReferences)</ForceSymbolReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aes256.cpp" />
+    <ClCompile Include="AlgorithmConfigPane.cpp" />
+    <ClCompile Include="CableForceDlg.cpp" />
+    <ClCompile Include="ConsoleDlg.cpp" />
+    <ClCompile Include="DraftDlgs.cpp" />
+    <ClCompile Include="GenericParamDlg.cpp" />
+    <ClCompile Include="GeometryDlg.cpp" />
+    <ClCompile Include="GeometryView.cpp" />
+    <ClCompile Include="InteractiveGeometryDlg.cpp" />
+    <ClCompile Include="IPC.cpp" />
+    <ClCompile Include="LegGeometryDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="NCDlg.cpp" />
+    <ClCompile Include="OrientationDlg.cpp" />
+    <ClCompile Include="PathGenerator.cpp" />
+    <ClCompile Include="PersistantDefaultValue.cpp" />
+    <ClCompile Include="PoseDlg.cpp" />
+    <ClCompile Include="PoseEvaluatorDlg.cpp" />
+    <ClCompile Include="PyScriptDlg.cpp" />
+    <ClCompile Include="PythonInterface.cpp" />
+    <ClCompile Include="RobotPropertiesDlg.cpp" />
+    <ClCompile Include="ShapeListViewDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="wcPlugin.cpp" />
+    <ClCompile Include="wcPyBindings.cpp" />
+    <ClCompile Include="WireCenter.cpp" />
+    <ClCompile Include="WireCenterDoc.cpp" />
+    <ClCompile Include="WireCenterProjectfile.cpp" />
+    <ClCompile Include="WireCenterView.cpp" />
+    <ClCompile Include="WorkspaceOptionsDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aes256.h" />
+    <ClInclude Include="AlgorithmConfigPane.h" />
+    <ClInclude Include="CableForceDlg.h" />
+    <ClInclude Include="ConsoleDlg.h" />
+    <ClInclude Include="DraftDlgs.h" />
+    <ClInclude Include="GenericParamDlg.h" />
+    <ClInclude Include="GeometryDlg.h" />
+    <ClInclude Include="GeometryView.h" />
+    <ClInclude Include="InteractiveGeometryDlg.h" />
+    <ClInclude Include="IPC.h" />
+    <ClInclude Include="LegGeometryDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="NCDlg.h" />
+    <ClInclude Include="OrientationDlg.h" />
+    <ClInclude Include="PathGenerator.h" />
+    <ClInclude Include="PersistantDefaultValue.h" />
+    <ClInclude Include="PoseDlg.h" />
+    <ClInclude Include="PoseEvaluatorDlg.h" />
+    <ClInclude Include="PyScriptDlg.h" />
+    <ClInclude Include="PythonInterface.h" />
+    <ClInclude Include="Reflection.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RobotPropertiesDlg.h" />
+    <ClInclude Include="ShapeListViewDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="UserMessages.h" />
+    <ClInclude Include="wcPlugin.h" />
+    <ClInclude Include="wcPyBindings.h" />
+    <ClInclude Include="WireCenter.h" />
+    <ClInclude Include="WireCenterDoc.h" />
+    <ClInclude Include="WireCenterProjectfile.h" />
+    <ClInclude Include="WireCenterView.h" />
+    <ClInclude Include="WorkspaceOptionsDlg.h" />
+    <ClInclude Include="..\wcPlugin\wcDllApi.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\copyright.txt" />
+    <None Include="res\Toolbar2.bmp" />
+    <None Include="res\fhg.bmp" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\MotionPattern.bmp" />
+    <None Include="res\ribbon1.mfcribbon-ms">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\toolbar_console.bmp" />
+    <None Include="res\WireCenter.ico" />
+    <None Include="res\WireCenter.rc2" />
+    <None Include="res\WireCenterDoc.ico" />
+    <None Include="WireCenterMain.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WireCenter.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IPAGL\IPAGL.2015.vcxproj">
+      <Project>{42c82bc3-d0dd-4e59-b8a0-dc3df7984f1a}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tinyXML\VisualCPP\tinyXML.2015.vcxproj">
+      <Project>{4768d5ee-79ab-4167-911a-7493d7e18945}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WireLibPyBindings\WireLibPyBindings.2015.vcxproj">
+      <Project>{793e1dcb-1020-4a14-a6e2-a10551523709}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WireLib\VisualCPP\WireLib.2015.vcxproj">
+      <Project>{50d63844-4197-44e2-894f-408905ca26d2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="WireCenter.rc" _x007B_6262D3A0-531B-11CF-91F6-C2863C385E30_x007D_="CGeometry_msflexgrid" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

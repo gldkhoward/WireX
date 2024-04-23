@@ -1,0 +1,51 @@
+<models version="0.32">
+    <robot name="EXPO2015 Roberto" id="1.0" author="ISW University of Stuttgart c/o Milla&amp;Partner" description="Right one of the two cable robots presented at EXPO2015 in Milan, Italy. Erected 2015-03; Commissioned 2015-03-18; In Operation: 2015-05-01; Out of Operation: 2015-10-31" generator="Wirelib Model writer, (C)opyright 2009-2015 Andreas Pott. Build: WireLib -- Parallel Cable Robot Library1.1.1431" motionpattern="3R3T">
+        <geometry>
+            <chain id="1" winchtype="IPAnema-Winde">
+                <base x="3.008153" y="-6.269103" z="7.081854" a11="-0.707107" a21="0.707107" a31="0.000000" a12="0.707107" a22="0.707107" a32="-0.000000" a13="-0.000000" a23="-0.000000" a33="-1.000000" radius="0.010000" />
+                <platform x="0.433287" y="-0.217653" z="1.147185" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="2" winchtype="IPAnema-Winde">
+                <base x="-2.267854" y="-6.940775" z="7.060122" a11="-0.000000" a21="1.000000" a31="0.000000" a12="1.000000" a22="0.000000" a32="-0.000000" a13="-0.000000" a23="-0.000000" a33="-1.000000" radius="0.010000" />
+                <platform x="-0.439492" y="-0.213906" z="1.142829" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="3" winchtype="IPAnema-Winde">
+                <base x="-2.140914" y="6.840392" z="7.049731" a11="0.000000" a21="-1.000000" a31="0.000000" a12="-1.000000" a22="-0.000000" a32="-0.000000" a13="0.000000" a23="0.000000" a33="-1.000000" radius="0.010000" />
+                <platform x="-0.442317" y="0.231018" z="1.139009" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="4" winchtype="IPAnema-Winde">
+                <base x="3.110641" y="6.066013" z="7.075220" a11="-0.707107" a21="-0.707107" a31="0.000000" a12="-0.707107" a22="0.707107" a32="-0.000000" a13="0.000000" a23="-0.000000" a33="-1.000000" radius="0.010000" />
+                <platform x="0.432211" y="0.228158" z="1.144583" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="5" winchtype="IPAnema-Winde">
+                <base x="3.069903" y="-6.233257" z="6.091435" a11="-0.707107" a21="0.707107" a31="0.000000" a12="0.707107" a22="0.707107" a32="-0.000000" a13="-0.000000" a23="-0.000000" a33="-1.000000" radius="0.010000" />
+                <platform x="0.676110" y="-0.440700" z="0.275000" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="6" winchtype="IPAnema-Winde">
+                <base x="-2.323780" y="-6.921901" z="6.063201" a11="-0.000000" a21="1.000000" a31="0.000000" a12="1.000000" a22="0.000000" a32="-0.000000" a13="-0.000000" a23="-0.000000" a33="-1.000000" radius="0.010000" />
+                <platform x="-0.679726" y="-0.432593" z="0.269429" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="7" winchtype="IPAnema-Winde">
+                <base x="-2.202712" y="6.841950" z="6.056895" a11="0.000000" a21="-1.000000" a31="0.000000" a12="-1.000000" a22="-0.000000" a32="-0.000000" a13="0.000000" a23="0.000000" a33="-1.000000" radius="0.010000" />
+                <platform x="-0.678445" y="0.441848" z="0.262354" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="8" winchtype="IPAnema-Winde">
+                <base x="3.170527" y="6.018930" z="6.075830" a11="-0.707107" a21="-0.707107" a31="0.000000" a12="-0.707107" a22="0.707107" a32="-0.000000" a13="0.000000" a23="-0.000000" a33="-1.000000" radius="0.010000" />
+                <platform x="0.677649" y="0.433423" z="0.271033" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+        </geometry>
+        <platform name="default_platform" description="default_desc" mass="130.000000" swing_angle="50.000000">
+            <inertiatensor Ixx="14" />
+            <centerofgravity x="0.000000" y="1.000000" z="0.200000" />
+        </platform>
+        <controller ipo_clock="4.000000" />
+    </robot>
+    <cable name="defaultCable" elasticity="1770000000.000000" radius="0.007000" breaking_load="21900.000000" damping="1.000000" weight="0.198000" minimum_load="0.000000" max_length="12.500000" min_length="2.000000" meter_cost="0.000000" material="defaultMaterial" />
+    <winch name="IPAnema-Winde" description="Winde des IPAnema roboters ausgelegt fuer 2,5mm und 6mm Dyneema Seil">
+        <cable nr_cables="1" f_max="720.000000" f_hold_max="0.000000" string_orientation="0.000000" dl_max="0.000000" l_min="0.000000" max_velocity="1.200000" max_acceleration="1.500000" max_jerk="0.000000" position_sensor_accuracy="0.000000" force_sensor_accuracy="0.000000" spring_constant="0.000000" length_offset="0.000000" />
+        <motor motor_type="Bosch Rexroth MSK050B-0600-NN-M2-UG1-RNNN" inertia="0.001527" mass="5.700000" max_power="0.000000" angular_velocity="6000.000000" angular_acceleration="0.000000" gear_ratio="3.000000" />
+        <drum r_drum="0.600000" l_drum="0.300000" nr_groove="14.000000" dfriction="0.000000" sfriction="0.000000" backlash="0.000000" />
+        <guidinglimit apeture="3.141593" cone_offset="0.000000" />
+        <anchoring anchoring_type="defaultAnchoring" max_force="0.000000" x="0.000000" y="0.000000" z="0.000000" />
+    </winch>
+</models>

@@ -1,0 +1,51 @@
+<models version="0.32">
+    <robot name="IPAnema" id="1.0" author="Fraunhofer IPA" description="Wirelib Model writer, (C)opyright 2009-2011 Andreas Pott" generator="Wirelib Model writer, (C)opyright 2009-2015 Andreas Pott. Build: WireLib -- Parallel Cable Robot Library1.1.1431" motionpattern="3R3T">
+        <geometry>
+            <chain id="1" winchtype="IPAnema-Winde">
+                <base x="-0.827590" y="2.291608" z="3.029579" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" radius="0.100000" />
+                <platform x="-0.285796" y="0.480944" z="-0.149339" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="2" winchtype="IPAnema-Winde">
+                <base x="2.024038" y="1.646470" z="3.040020" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" radius="0.100000" />
+                <platform x="0.410017" y="0.407661" z="-0.154922" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="3" winchtype="IPAnema-Winde">
+                <base x="1.826136" y="-1.690455" z="3.015777" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" radius="0.100000" />
+                <platform x="0.322917" y="-0.435495" z="-0.153719" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="4" winchtype="IPAnema-Winde">
+                <base x="-1.208738" y="-1.773710" z="3.000357" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" radius="0.100000" />
+                <platform x="-0.373828" y="-0.361566" z="-0.149112" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="5" winchtype="IPAnema-Winde">
+                <base x="-1.052909" y="2.372508" z="-0.147001" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" radius="0.100000" />
+                <platform x="-0.364679" y="0.415713" z="0.149339" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="6" winchtype="IPAnema-Winde">
+                <base x="1.804420" y="2.043564" z="-0.148545" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" radius="0.100000" />
+                <platform x="0.480998" y="0.330955" z="0.151360" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="7" winchtype="IPAnema-Winde">
+                <base x="1.523551" y="-1.623971" z="-0.145824" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" radius="0.100000" />
+                <platform x="0.405271" y="-0.371952" z="0.155445" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+            <chain id="8" winchtype="IPAnema-Winde">
+                <base x="-1.382742" y="-1.623971" z="-0.168782" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" radius="0.100000" />
+                <platform x="-0.437977" y="-0.281052" z="0.150882" a11="1.000000" a21="0.000000" a31="0.000000" a12="0.000000" a22="1.000000" a32="0.000000" a13="0.000000" a23="0.000000" a33="1.000000" />
+            </chain>
+        </geometry>
+        <platform name="default_platform" description="default_desc" mass="25.000000" swing_angle="50.000000">
+            <inertiatensor Ixx="14" />
+            <centerofgravity x="0.000000" y="1.000000" z="0.200000" />
+        </platform>
+        <controller ipo_clock="4.000000" />
+    </robot>
+    <cable name="defaultCable" elasticity="110000000000.000000" radius="0.006000" breaking_load="40000.000000" damping="1.000000" weight="0.023000" minimum_load="0.000000" max_length="0.000000" meter_cost="0.000000" material="defaultMaterial" />
+    <winch name="IPAnema-Winde" description="Winde des IPAnema roboters ausgelegt fuer 2,5mm und 6mm Dyneema Seil">
+        <cable nr_cables="1" f_max="720.000000" f_hold_max="0.000000" string_orientation="0.000000" dl_max="0.000000" l_min="0.000000" max_velocity="2.618000" max_acceleration="0.000000" max_jerk="0.000000" position_sensor_accuracy="0.000000" force_sensor_accuracy="0.000000" spring_constant="0.000000" length_offset="0.000000" />
+        <motor motor_type="Bosch Rexroth MSK050B-0600-NN-M2-UG1-RNNN" inertia="0.001527" mass="5.700000" max_power="0.000000" angular_velocity="6000.000000" angular_acceleration="0.000000" gear_ratio="3.000000" />
+        <drum r_drum="0.100000" l_drum="0.300000" nr_groove="14.000000" dfriction="0.000000" sfriction="0.000000" backlash="0.000000" />
+        <guidinglimit apeture="3.141593" cone_offset="0.000000" />
+        <anchoring anchoring_type="defaultAnchoring" max_force="0.000000" x="0.000000" y="0.000000" z="0.000000" />
+    </winch>
+</models>
