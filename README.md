@@ -53,4 +53,4 @@ where lines without the > are the expected response
 ### Further Details
 The details above cover the very simple changes made to the existing project, for further information refer to the readMe within the project or the following:
 [WireX Repo](https://gitlab.cc-asp.fraunhofer.de/wek/wirex "Original WireX Repo")
-[WireX Presentation] (https://www.researchgate.net/publication/334164626_WireX_-_An_Open_Source_Initiative_Scientific_Software_for_Analysis_and_Design_of_Cable-driven_Parallel_Robots "Some additional information on the WireX software")
+[WireX Presentation](https://www.researchgate.net/publication/334164626_WireX_-_An_Open_Source_Initiative_Scientific_Software_for_Analysis_and_Design_of_Cable-driven_Parallel_Robots "Some additional information on the WireX software")
