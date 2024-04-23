@@ -49,6 +49,12 @@ True
 ```
 where lines without the > are the expected response
 
+### Changes for Different Python versions
+
+Different version can probably be accomadated idk, things to change:
+- Line 40 in WireLibPyBindings.h #include <python3.10/Python.h> -> your version
+- Line 43 in WiPy/pyBindings.h #include <python3.10/Python.h> -> your version
+
 
 ### Further Details
 The details above cover the very simple changes made to the existing project, for further information refer to the readMe within the project or the following:
